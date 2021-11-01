@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>KFC Menu Prices | KFC Menu Deals, Offers & Exclusives</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- Favicons -->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<style>
+		.nav-link {
+			color: black;
+			font-size: 16px;
+			width: 250px;
+		}
+
+		a.nav-link.active {
+			font-weight: 700;
+		}
+
+		.nav-link:hover {
+			font-weight: 700;
+			color: black;
+		}
+
+		.card-img-top {
+			border-radius: 10px;
+			margin-top: 30px;
+		}
+	</style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<div class="container top">
+		<div class="row">
+			<div class="col-6">
+				<a href="index.html"><img height="60px" width="90px" src="assets/images/logo.svg"/></a>
+          <a href="index.html#sign" style="color: black;"><span class="titlemenu">Menu</span></a>
+          <a href="index.html#coupon" style="color: black;"><span class="titlemenu">Deals</span></a>
+				</div>
+				<div class="col-3"></div>
+				<div class="col-3" style="padding-top: 2vh;">
+          <a href="login.html" class="signina">
+          <img src="assets/images/accticon.svg" alt="account icon">
+					<span class="titlemenu" style="margin-right: 40px;">Sign in</span>
+          </a>
+          
+          <img data-toggle="modal" data-target="#bucketicon" class="bucketicon" src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/73321aa4335f6fc7a277be37e174a157/Cart_icon_animation_100-_new.svg" alt="bucket icon">
+				</div>
+			</div>
+		</div>
+
+    <div class="top-div">
+      <div class="row">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-6">
+      <span class="top-head">LET'S ORDER FOR DELIVERY, TAKEAWAY, OR DINE-IN</span>
+      <a href="index.html#welcome"><button class="btn start-btn">Start Order</button></a>
+        </div>
+        <div class="col-sm-2">
+        </div>
+      </div>
+    </div>
+		
+
+    
+		<div class="wholeproductpage">
+    <div class="row">
+      <nav class="navbar-sticky-top">
+      <div class="col-sm-3 stickyposition">
+      <img src="assets/images/strips.svg" alt="" width="70px">
+        <h1 class="kfctitle">KFC MENU</h1>
+        <nav class="nav navbar flex-column">
+          <a class="nav-link" href="#chicken">Chicken</a>
+          <a class="nav-link" href="#trending">Trending</a>
+          <a class="nav-link" href="#burgers">Burgers</a>
+          <a class="nav-link" href="#rice">Rice Bowlz</a>
+          <a class="nav-link" href="#snacks">Snacks</a>
+          <a class="nav-link" href="#beverages">Beverages</a>
+
+      </nav>
+      </div>
+      </nav>
+      <div class="col-sm-9">
+        <div class="wholesearchbar">
+          <span><i class="fa fa-search" style="padding-left: 0;"></i></span>
+        <input type="text" class="searchbar" 
+      onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search our menu'" placeholder = "Search our menu" id="searchbar" onmouseclick="search()">
+        </div>
+        <hr class="horiline">
+        <div class="jumbotron" id="chicken">
+          <h1 class="producttitle">CHICKEN</h1>
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="card-img-top" src="assets/productimages/1.jpeg">
+              <p class="ptitle">Super-4s</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 2</span><br>
+              <p class="pprice">₹499.00</p>
+              <p class="pcontent">Save 22% on this combo of 4pc Hot & Crispy with 4pc Chicken Strips [Serves 2]</p>
+              <button class="cartbutton" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-6">
+              <img class="card-img-top" src="assets/productimages/2.jpeg">
+              <p class="ptitle">Super-6s</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 3</span><br>
+              <p class="pprice">₹699.00</p>
+              <p class="pcontent">Flat 27% off on this combo of 6pc Hot & Crispy with 6pc Chicken Strips [Serves 3]</p>
+              <button class="cartbutton" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="card-img-top" src="assets/productimages/3.jpeg">
+              <p class="ptitle">Match Time Feast</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 3</span><br>
+              <p class="pprice">₹749.00</p>
+              <p class="pcontent">Save 21% & enjoy 4pc Hot & Crispy Chicken, 4 Hot Wings, 6 chicken strips & 2 delicious dips [serves 3</p>
+              <button class="cartbutton" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-6">
+              <img class="card-img-top" src="assets/productimages/4.jpeg">
+              <p class="ptitle">Hat-Trick Combo</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 3</span><br>
+              <p class="pprice">₹789.00</p>
+              <p class="pcontent">Match Deal of 3 chicken zingers, a medium popcorn, medium fries & a chilled Pepsi PET [serves 3]</p>
+              <button class="cartbutton" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="card-img-top" src="assets/productimages/5.jpeg">
+              <p class="ptitle">5pc Leg Piece Bucket Meal</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 2</span><br>
+              <p class="pprice">₹599.00</p>
+              <p class="pcontent">Stay home & chill with Leg Piece! Save Rs. 160 on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a chilled Pepsi PET! [serves 2 ]</p>
+              <button class="cartbutton" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-6">
+              <img class="card-img-top" src="assets/productimages/6.jpeg">
+              <p class="ptitle">10pc Leg Piece Bucket & 4 Dips</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 3-4</span><br>
+              <p class="pprice">₹799.00</p>
+              <p class="pcontent">Leg Piece is back! Save 33% on 10 chicken Leg Pieces & 4 delicious dips [serves 3-4]</p>
+              <button class="cartbutton" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="card-img-top" src="assets/productimages/7.jpeg">
+              <p class="ptitle">Friendship Bucket</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 3</span><br>
+              <p class="pprice">₹650.00</p>
+              <p class="pcontent">Save 23% on this combo of 3pc Hot & Crispy chicken, 3 Hot Wings, 3 Chicken Strips & a Large Popcorn [serves 3</p>
+              <button class="cartbutton" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-6">
+              <img class="card-img-top" src="assets/productimages/8.jpeg">
+              <p class="ptitle">Bucket for Two</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 2-3</span><br>
+              <p class="pprice">₹599.00</p>
+              <p class="pcontent">Flat Rs. 70 off with this variety combo of 2pc Hot & Crispy Chicken, 2 pc Smoky Red Chicken & a Large Popcorn [serves 2-3]</p>
+              <button class="cartbutton" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="card-img-top" src="assets/productimages/9.jpeg">
+              <p class="ptitle">10 strips & 2 Dips Bucket</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory"> Serves 2-3</span><br>
+              <p class="pprice">₹499.00</p>
+              <p class="pcontent">Flat Rs. 101 off on this dipping combo of 10 pc chicken strips & 2 delicious dips [serves 2-3]</p>
+              <button class="cartbutton" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-6">
+              <img class="card-img-top" src="assets/productimages/10.jpeg">
+              <p class="ptitle">5pc Leg Piece Bucket & 2 Dips</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 2</span><br>
+              <p class="pprice">₹499.00</p>
+              <p class="pcontent">Save 25% on this favorite combo of 5 Leg Pieces & 2 Dips [serves 2]</p>
+              <button class="cartbutton" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="card-img-top" src="assets/productimages/11.jpeg">
+              <p class="ptitle">Ultimate Savings Bucket</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 2-3</span><br>
+              <p class="pprice">₹699.00</p>
+              <p class="pcontent">Save 30% with our best-seller bucket of 4pc Hot & crispy chicken, 6 Hot Wings, 4 chicken strips , 3 Dips & a chilled Pepsi PET [serves 2-3 ]</p>
+              <button class="cartbutton" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-6">
+              <img class="card-img-top" src="assets/productimages/12.jpeg">
+              <p class="ptitle">10pc Leg Piece Bucket & 4 Dips</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 2- 3</span><br>
+              <p class="pprice">₹729.00</p>
+              <p class="pcontent">Save 22% on this combo of 6pc Hot & Crispy Chicken, 6 Hot Wings & 2 creamy dips [serves 2- 3]</p>
+              <button class="cartbutton" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="card-img-top" src="assets/productimages/13.jpeg">
+              <p class="ptitle">Mingles Bucket Meal</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 2</span><br>
+              <p class="pprice">₹459.00</p>
+              <p class="pcontent">Save Rs. 55 on this crowd favorite combo of 4 Hot Wings, 2 Chicken Strips, a Reg Popcorn, medium fries & a chilled Pepsi PET [serves 2 ]</p>
+              <button class="cartbutton" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-6">
+              <img class="card-img-top" src="assets/productimages/14.jpeg">
+              <p class="ptitle">Big 8</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 2- 3</span><br>
+              <p class="pprice">₹619.00</p>
+              <p class="pcontent">Save 30% on this variety bucket of 4pc Hot & Crispy chicken & 4pc Smoky Red chicken [serves 2- 3 ]</p>
+              <button class="cartbutton" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="card-img-top" src="assets/productimages/15.jpeg">
+              <p class="ptitle">5pc Smoky Red Chicken</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 2</span><br>
+              <p class="pprice">₹429.00</p>
+              <p class="pcontent">Save Rs. 121 & get 5pc Smoky red grilled chicken [serves 2]</p>
+              <button class="cartbutton" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-6">
+              <img class="card-img-top" src="assets/productimages/16.jpeg">
+              <p class="ptitle">8 pc Hot & Crispy Chicken</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 3-4</span><br>
+              <p class="pprice">₹699.00</p>
+              <p class="pcontent">Save 26% & get 8pc signature Hot & crispy chicken [serves 3-4</p>
+              <button class="cartbutton" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="card-img-top" src="assets/productimages/17.jpeg">
+              <p class="ptitle">6 Pc Hot & Crispy</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 2-3</span><br>
+              <p class="pprice">₹549.00</p>
+              <p class="pcontent">Save Rs. 111 & get 6pc signature Hot & crispy chicken [serves 2-3]</p>
+              <button class="cartbutton" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-6">
+              <img class="card-img-top" src="assets/productimages/18.jpeg">
+              <p class="ptitle">KFC Favorites</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span><br>
+              <p class="pprice">₹399.00</p>
+              <p class="pcontent">Save 27% on this combo Chicken Zinger, Large Popcorn & 4pc Hot Wings</p>
+              <button class="cartbutton" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="card-img-top" src="assets/productimages/19.jpeg">
+              <p class="ptitle">Chick & Share</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 2</span><br>
+              <p class="pprice">₹449.00</p>
+              <p class="pcontent">Save upto Rs. 101 & Pick any combo - 5pc Hot & Crispy Chicken OR 10 chicken strips OR 2 Large Popcorn [serves 2]</p>
+              <button class="cartbutton" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="trending">
+        <div>
+          <h1 class="producttitle">TRENDING</h1>
+        </div>
+          <div class="row">
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/20.jpeg">
+              <p class="ptitle">Super Snacker Combo</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 1-2</span><br>
+              <p class="pprice">₹429.00</p>
+              <p class="pcontent">Best of snacks with a Medium Popcorn, 4 strips, 1 dip & a chilled Pepsi Black [serves 1-2]</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/21.jpeg">
+              <p class="ptitle">Chick’n Wings Combo</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 1-2</span><br>
+              <p class="pprice">₹429.00</p>
+              <p class="pcontent">Enjoy 2pc Hot & Crispy Chicken, 4 wings , 2 dips & a chilled Pepsi Black [serves 1-2]</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/22.jpeg">
+              <p class="ptitle">Classic Zinger Meal</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 1</span><br>
+              <p class="pprice">₹319.00</p>
+              <p class="pcontent">Favorite combo of Classic Zinger Burger, Medium Fries & a chilled Pepsi Black [serves 1]</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="trendingcard">
+              <img class="card-img-top" src="assets/productimages/23.jpeg">
+              <p class="ptitle">Chick'n Strips Solo Combo</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 1</span><br>
+              <p class="pprice">₹399.00</p>
+              <p class="pcontent">Go solo with 1 pc Hot & Crispy, 3 strips, Medium Fries & a chilled Pepsi Black [serves 1]</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/24.jpeg">
+              <p class="ptitle">Chick'n Fries Solo Combo</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 1</span><br>
+              <p class="pprice">₹399.00</p>
+              <p class="pcontent">Try this classic pairing of 2pc Hot & Crispy, Medium Fries, 2 Dips & a chilled Pepsi Black [serves 1]</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/25.jpeg">
+              <p class="ptitle">Chick'n Rice Solo Combo</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 1</span><br>
+              <p class="pprice">₹379.00</p>
+              <p class="pcontent">Enjoy 1 Popcorn Rice Bowl, 3 strips, 1 Dip & a chilled Pepsi Black [serves 1]</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="trendingcard">
+              <img class="card-img-top" src="assets/productimages/26.jpeg">
+              <p class="ptitle">Mingles Bucket Meal</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 2</span><br>
+              <p class="pprice">₹459.00</p>
+              <p class="pcontent">Save Rs. 55 on this crowd favorite combo of 4 Hot Wings, 2 Chicken Strips, a Reg Popcorn, medium fries & a chilled Pepsi PET</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/27.jpeg">
+              <p class="ptitle">Ultimate Savings Bucket</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 2-3</span><br>
+              <p class="pprice">₹699.00</p>
+              <p class="pcontent">Save 30% with our best-seller bucket of 4pc Hot & crispy chicken, 6 Hot Wings, 4 chicken strips , 3 Dips & a chilled Pepsi...</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          </div>
+          <br>
+
+        <div id="burgers">
+        <div>
+          <h1 class="producttitle">BURGERS</h1>
+        </div>
+          <div class="row">
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/28.jpeg">
+              <p class="ptitle">2 Chicken Krisper Burgers</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <br>
+              <p class="pprice">₹219.00</p>
+              <p class="pcontent">2 delicious chicken value burgers - at only 109 each!</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/29.jpeg">
+              <p class="ptitle">2 Veg Krisper Burgers</p>
+              <div class="pcircleveg"></div>
+              <span class="pcategory">Veg</span>
+              <br>
+              <p class="pprice">₹138.00</p>
+              <p class="pcontent">2 delicious veg value burgers - at only 69 each!</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/30.jpeg">
+              <p class="ptitle">Chicken & Krispers Combo</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <br>
+              <p class="pprice">₹499.00</p>
+              <p class="pcontent">Save Rs. 50 on this combo of 2 chicken value burgers, 2 pc Hot & Crispy, 2 dips & a chilled Pepsi PET!</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/31.jpeg">
+              <p class="ptitle">Veg-Non-Veg Krispers Combo</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <br>
+              <p class="pprice">₹349.00</p>
+              <p class="pcontent">Pack of 4 burgers - 2 veg & 2 chicken value burgers at a deal price !</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/32.jpeg">
+              <p class="ptitle">Tandoori Zinger Burger</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <br>
+              <p class="pprice">₹180.00</p>
+              <p class="pcontent">Chicken zinger with a delicious tandoori sauce</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/33.jpeg">
+              <p class="ptitle">Tandoori Zinger Box</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <br>
+              <p class="pprice">₹299.00</p>
+              <p class="pcontent">This one's for the Zinger lovers : you get 1 Tandoori Zinger, 2 Hot Wings, 1 Veg Patty & 1 chilled Pepsi PET</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/34.jpeg">
+              <p class="ptitle">Mixed Zinger Doubles</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <br>
+              <p class="pprice">₹309.00</p>
+              <p class="pcontent">TBest-seller combo of classic chicken zinger & tandoori zinger</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/35.jpeg">
+              <p class="ptitle">Classic Zinger Burger</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span><br>
+              <p class="pprice">₹170.00</p>
+              <p class="pcontent">Signature chicken burger made with a crunchy chicken fillet, veggies & a delicious mayo sauce</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/36.jpeg">
+              <p class="ptitle">Classic Zinger Box</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span><br>
+              <p class="pprice">₹299.00</p>
+              <p class="pcontent">This one's for the Zinger lovers : you get 1 Classic Zinger, 2 Hot Wings, 1 Veg Patty & 1 chilled Pepsi PET</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/37.jpeg">
+              <p class="ptitle">Buddy Meal</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span><br>
+              <p class="pprice">₹460.00</p>
+              <p class="pcontent">Share 2 Classic Chicken Zingers & a Medium Popcorn in this delightful combo for 2</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/38.jpeg">
+              <p class="ptitle">Veg Zinger Burger</p>
+              <div class="pcircleveg"></div>
+              <span class="pcategory">Veg</span><br>
+              <p class="pprice">₹160.00</p>
+              <p class="pcontent">Signature veg burger with crispy patties, veggies & a tangy sauce</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/39.jpeg">
+              <p class="ptitle">Veg Zinger Box</p>
+              <div class="pcircleveg"></div>
+              <span class="pcategory">Veg</span><br>
+              <p class="pprice">₹299.00</p>
+              <p class="pcontent">Veg lovers unite ! You get 1 Veg Zinger, 2 Veg Patties, and 1 chilled Pepsi PET.</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/40.jpeg">
+              <p class="ptitle">2 Veg Krispers Meal</p>
+              <div class="pcircleveg"></div>
+              <span class="pcategory">Veg</span><br>
+              <p class="pprice">₹249.00</p>
+              <p class="pcontent">2 veg value burgers, crispy medium fries & 2 delicious dips at a deal price!</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div id="rice">
+        <div>
+          <h1 class="producttitle">RICE BOWLZ</h1>
+        </div>
+          <div class="row">
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/41.jpeg">
+              <p class="ptitle">Popcorn Rice Bowl</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <br>
+              <p class="pprice">₹159.00</p>
+              <p class="pcontent">Bowl of rice with flavorful gravy & crunchy popcorn</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/42.jpeg">
+              <p class="ptitle">Rice Duo Meal</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <div class="pgreycircle"></div>
+              <span class="pcategory">Serves 2</span><br>
+              <p class="pprice">₹419.00</p>
+              <p class="pcontent">Deal combo of 2 chicken popcorn rice bowls, medium fries & a chilled Pepsi PET [serves 2]</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/43.jpeg">
+              <p class="ptitle">Smoky Red Rice Bowl</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span><br>
+              <p class="pprice">₹180.00</p>
+              <p class="pcontent">Bowl of rice with flavorful gravy & smoky red chicken</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/44.jpeg">
+              <p class="ptitle">Veg Rice Bowl</p>
+              <div class="pcircleveg"></div>
+              <span class="pcategory">Veg</span>
+              <br>
+              <p class="pprice">₹150.00</p>
+              <p class="pcontent">Bowl of rice with flavorful gravy & crispy veg patty</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div id="snacks">
+        <div>
+          <h1 class="producttitle">SNACKS</h1>
+        </div>
+          <div class="row">
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/45.jpeg">
+              <p class="ptitle">Choco Mud Pie</p>
+              <div class="pcircleveg"></div>
+              <span class="pcategory">Veg</span>
+              <br>
+              <p class="pprice">₹119.00</p>
+              <p class="pcontent">Chocolate lovers unite! Say hello to our delicous, new, creamy chocolate & cake dessert- a must try!</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/46.jpeg">
+              <p class="ptitle">Coffee Mousse Cake</p>
+              <div class="pcircleveg"></div>
+              <span class="pcategory">Veg</span>
+              <br>
+              <p class="pprice">₹119.00</p>
+              <p class="pcontent">Coffee, chocolate, cake…what's not to love? Enjoy our delicious, new dessert for those coffee-licious temptations!</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/47.jpeg">
+              <p class="ptitle">Chicken & Fries Bucket</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span><br>
+              <p class="pprice">₹199.00</p>
+              <p class="pcontent">Save 37% on this favorite combo of 2pc Hot & Crispy chicken with Medium Fries</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/48.jpeg">
+              <p class="ptitle">Mingles Bucket</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <br>
+              <p class="pprice">₹309.00</p>
+              <p class="pcontent">Save Rs. 50 on this ultimate mingle of 4 Hot Wings, 2 chicken strips & a reg Popcorn [serves 1-2]</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/49.jpeg">
+              <p class="ptitle">4pc Hot & Crispy Chicken</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <br>
+              <p class="pprice">₹399.00</p>
+              <p class="pcontent">4 pcs of signature Hot & crispy chicken at a deal price</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/50.jpeg">
+              <p class="ptitle">Large Popcorn</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <br>
+              <p class="pprice">₹229.00</p>
+              <p class="pcontent">Bowl of rice with flavorful gravy & crispy veg patty</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/51.jpeg">
+              <p class="ptitle">Medium Popcorn</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <br>
+              <p class="pprice">₹150.00</p>
+              <p class="pcontent">ignature bite-sized boneless chicken, with special spices</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/52.jpeg">
+              <p class="ptitle">Regular Popcorn</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <br>
+              <p class="pprice">₹109.00</p>
+              <p class="pcontent">Signature bite-sized boneless chicken, with special spices</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/53.jpeg">
+              <p class="ptitle">Large Fries</p>
+              <div class="pcircleveg"></div>
+              <span class="pcategory">Veg</span>
+              <br>
+              <p class="pprice">₹115.00</p>
+              <p class="pcontent">Jazz up your meal with crispy large fries!</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/54.jpeg">
+              <p class="ptitle">Medium Fries</p>
+              <div class="pcircleveg"></div>
+              <span class="pcategory">Veg</span>
+              <br>
+              <p class="pprice">₹95.00</p>
+              <p class="pcontent">Jazz up your meal with crispy fries!</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/55.jpeg">
+              <p class="ptitle">2 pc Hot & Crispy Chicken</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <br>
+              <p class="pprice">₹219.00</p>
+              <p class="pcontent">Signature Hot & crispy chicken</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/56.jpeg">
+              <p class="ptitle">2 pc Smoky Red Chickens</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <br>
+              <p class="pprice">₹219.00</p>
+              <p class="pcontent">Spicy, red, grilled chicken</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/57.jpeg">
+              <p class="ptitle">6pc Boneless Chicken strips</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <br>
+              <p class="pprice">₹229.00</p>
+              <p class="pcontent">Tender, juicy, signature boneless chicken strips</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/58.jpeg">
+              <p class="ptitle">4pc Hot Chicken Wings</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <br>
+              <p class="pprice">₹158.00</p>
+              <p class="pcontent">Seasoned, signature KFC chicken wings</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/59.jpeg">
+              <p class="ptitle">1 pc Hot & Crispy Chicken</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <br>
+              <p class="pprice">₹110.00</p>
+              <p class="pcontent">Signature Hot & crispy chicken</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/3.jpeg">
+              <p class="ptitle">1 Pc Smoky Red Chicken</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <br>
+              <p class="pprice">₹110.00</p>
+              <p class="pcontent">Spicy, red, grilled chicken</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/61.jpeg">
+              <p class="ptitle">3pc Boneless Chicken strips</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <br>
+              <p class="pprice">₹150.00</p>
+              <p class="pcontent">Tender, juicy, signature boneless chicken strips</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/62.jpeg">
+              <p class="ptitle">2 pc Veg Patty</p>
+              <div class="pcircleveg"></div>
+              <span class="pcategory">Veg</span>
+              <br>
+              <p class="pprice">₹140.00</p>
+              <p class="pcontent">Delicious, crispy, veg add-on!</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/63.jpeg">
+              <p class="ptitle">Tandoori Masala Dip</p>
+              <div class="pcircleveg"></div>
+              <span class="pcategory">Veg</span>
+              <br>
+              <p class="pprice">₹25.00</p>
+              <p class="pcontent">Special tandoori flavored dip, to add a twist to your meal!</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/61.jpeg">
+              <p class="ptitle">Pack of 4 Dips</p>
+              <div class="pcircleveg"></div>
+              <span class="pcategory">Veg</span>
+              <br>
+              <p class="pprice">₹150.00</p>
+              <p class="pcontent">Adding dips is always a good idea!</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/62.jpeg">
+              <p class="ptitle">Pack of 2 Dips</p>
+              <div class="pcircleveg"></div>
+              <span class="pcategory">Veg</span>
+              <br>
+              <p class="pprice">₹50.00</p>
+              <p class="pcontent">Adding dips is always a good idea!</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div id="beverages">
+        <div>
+          <h1 class="producttitle">BEVERAGES</h1>
+        </div>
+          <div class="row">
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/66.jpeg">
+              <p class="ptitle">Pepsi PET</p>
+              <div class="pcircleveg"></div>
+              <span class="pcategory">Veg</span>
+              <br>
+              <p class="pprice">₹60.00</p>
+              <p class="pcontent">Pepsi Pet Bottle</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/67.jpeg">
+              <p class="ptitle">Pepsi Can 330 ml</p>
+              <div class="pcircleveg"></div>
+              <span class="pcategory">Veg</span>
+              <br>
+              <p class="pprice">₹60.00</p>
+              <p class="pcontent">Pepsi Can 330 ml</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/68.jpeg">
+              <p class="ptitle">7UP Can 330 ml</p>
+              <div class="pcircleveg"></div>
+              <span class="pcategory">Veg</span>
+              <br>
+              <p class="pprice">₹60.00</p>
+              <p class="pcontent">7UP Can 330 ml!</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/69.jpeg">
+              <p class="ptitle">Pepsi Black Can 330 ml</p>
+              <div class="pcircle"></div>
+              <span class="pcategory">Non veg</span>
+              <br>
+              <p class="pprice">₹60.00</p>
+              <p class="pcontent">Pepsi Pet Bottle</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/70.jpeg">
+              <p class="ptitle">Mirinda Can 330 ml</p>
+              <div class="pcircleveg"></div>
+              <span class="pcategory">Veg</span>
+              <br>
+              <p class="pprice">₹60.00</p>
+              <p class="pcontent">Mirinda Can 330 ml</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+            <div class="col-lg-4 trendingcard">
+              <img class="card-img-top" src="assets/productimages/71.jpeg">
+              <p class="ptitle">Red Bull Energy Drink</p>
+              <div class="pcircleveg"></div>
+              <span class="pcategory">Veg</span>
+              <br>
+              <p class="pprice">₹160.00</p>
+              <p class="pcontent">Red Bull Energy Drink</p>
+              <button class="cartbutton" style="margin-left: 60px;" data-toggle="modal" data-target="#buy">Add to Cart</button>
+            </div>
+          </div>
+          </div>
+        <br>
+        <br>
+      </div>
+    </div>
+    </div>
+		
+		<div class="modal fade" id="buy" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+		  <div class="modal-dialog modal-lg">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">Let's Celebrate!</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				<div class="container-fluid">
+				  <div class="row">
+					<div class="col-xs-12">
+					  <div class="checkbox">
+						<label data-toggle="collapse" data-target="#promo">
+						  <input type="checkbox"> I have a promo code
+						</label>
+					  </div>
+					  <div class="collapse" id="promo">
+						<div class="form-group">
+						  <label for="inputpromo" class="control-label">Promo Code</label>
+						  <div class="form-inline">
+							<input type="text" class="form-control" id="inputpromo" placeholder="Enter promo code">
+							<button class="btn btn-sm">Apply</button>
+						  </div>
+						</div>
+					  </div>
+					  <h3>Ship my order to&hellip;</h3>
+					  <div class="list-group">
+						<div class="list-group-item">
+						  <div class="list-group-item-heading">          
+							  <div class="row radio">
+								<div class="col-xs-3">
+								  <label>
+									<input type="radio" name="optionShipp" id="optionShipp1" value="option2">
+									1509 Latona St
+								  </label>
+								</div>
+								<div class="col-xs-5" style="padding-left: 20px;">
+								  <dl class="dl-small">
+									<dt>Miguel Perez</dt>
+									<dd>1509 Latona St, Philadelphia, PA 19146 </dd>
+								  </dl>
+								  <button class="btn btn-sm">Edit</button>
+								  <button class="btn btn-sm btn-link">Delete this address</button>
+								</div>
+							  </div>
+						  </div>
+						</div>
+						<div class="list-group-item">
+						  <div class="list-group-item-heading">          
+							  <div class="row">
+								<div class="col-xs-3">
+								  <div class="radio">
+									<label>
+									  <input type="radio" name="optionShipp" id="optionShipp2" value="option2" checked>
+									  A new address
+									</label>
+								  </div>
+								</div>
+								<div class="col-xs-9">                      
+								  <form role="form" class="">
+									<div class="form-group">
+									  <label for="inputname">Name</label>
+									  <input type="text" class="form-control form-control-large" id="inputname" placeholder="Enter name">
+									</div>
+									<div class="form-group">
+									  <label for="inputAddress1">Street address 1</label>
+									  <input type="text" class="form-control form-control-large" id="inputAddress1" placeholder="Enter address">
+									</div>
+									<div class="form-group">
+									  <label for="inputAddress2">Street address 2</label>
+									  <input type="text" class="form-control form-control-large" id="inputAddress2" placeholder="Enter address">
+									</div>
+									<div class="form-group">
+										<label for="inputZip">ZIP Code</label>
+										<input type="text" class="form-control form-control-small" id="inputZip" placeholder="Enter zip">
+									</div>
+									<div class="form-group">
+										<label for="inputCity">City</label>
+										<input type="text" class="form-control" id="inputCity" placeholder="Enter city">
+									</div>
+									<div class="form-group">
+									  <label for="inputState" class="control-label">State</label>
+									  <select class="form-control form-control-large">
+										<option>Select state</option>
+									  </select>
+									</div>
+								  </form>
+								  <button class="btn btn-sm">Save Address</button>
+								</div>
+							  </div>
+						  </div>
+						</div>
+					  </div>
+					  <form role="form">
+						  <div class="checkbox">
+							<label data-toggle="collapse" data-target="#gift">
+							  <input type="checkbox"> I'd like to include a gift message
+							</label>
+						  </div>
+						  <div class="form-group collapse" id="gift">
+							<label for="inputGift" class="control-label">Gift Message</label>
+							<textarea class="form-control form-control-large" rows="3"></textarea>
+							<p class="help-block">256 characters left</p>
+						  </div>
+					  </form>
+					  <h3>I'll pay with&hellip;</h3>
+					  <div class="list-group">
+						<div class="list-group-item">
+						  <div class="list-group-item-heading">          
+							  <div class="row radio">
+								<div class="col-xs-3">
+								  <label data-toggl-e="collapse" data-target="#newcard">
+									<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+									A New Credit Card
+								  </label>
+								</div>
+								<div class="col-xs-9">                      
+								  <div class="media">
+									<a class="media-left" href="#">
+									  <img src="https://lovewithfood.com/assets/credit_cards/cards-b3a7c7b8345355bf110ebedfd6401312.png" height="25" alt="" />
+									</a>
+									<div class="media-body" id="newcard">
+									  We accept these credit cards.
+									</div>
+								  </div>
+								</div>
+							  </div>
+						  </div>
+						</div>
+						<div class="list-group-item">
+						  <div class="list-group-item-heading">          
+							  <div class="row radio">
+								<div class="col-xs-3">
+								  <label>
+									<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+									PayPal
+								  </label>
+								</div>
+								<div class="col-xs-9">                      
+								  <div class="media">
+									<a class="media-left" href="#">
+									  <img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_76x48.png" height="25" alt="" />
+									</a>
+									<div class="media-body">
+									  When you click "Place Order", you will be taken to the PayPal website.
+									</div>
+								  </div>
+								</div>
+							  </div>
+						  </div>
+						</div>
+					  </div><br>
+					  <div class="well">
+						<button type="button" class="btn btn-primary btn-lg btn-block" onclick="placed()">Place Order</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="row">
+			  <div class="col-1">
+			  </div>
+			  <div class="col-8">
+			  <div class="alert alert-success" id="success-message" style="display: none;">
+				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				<strong>Success!</strong> Meal is being cooked shortly.
+			  </div>
+			  </div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+    
+      <a href="#" class="topbtn">^</a>
+		
+    <!-- Bucket Icon Modal -->
+		<div class="modal fade" id="bucketicon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title apfont" id="exampleModalLabel" style="font-size: 30px; padding-left: 35%;">START YOUR ORDER</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+          <center>
+				<h5 class="modal-title apfont" id="exampleModalLabel" style="font-size: 40px; padding-top: 20px;">HOW WOULD YOU LIKE TO RECEIVE<br>YOUR ORDER?</h5><br>
+          <a href="" class="bia">Takeaway</a><br>
+          <a href="" class="bia">Delivery</a><br>
+          <a href="" class="bia">Dine In</a>
+          </center>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<footer>
+		<div class="container card links-footer">
+			<div class="row">
+				<div class="col-8" style="padding-top: 10px;">
+					<span class="footer-links">ABOUT KFC</span>
+					<span class="footer-links">GIFT CARD</span>
+					<span class="footer-links">FEEDBACK</span>
+					<span class="footer-links">CONTACT US</span>
+					<span class="footer-links">BRAND T & C</span>
+					<span class="footer-links">OFFERS T & C</span>
+					<span class="footer-links">SITE MAP</span>
+					<span class="footer-links">FIND A KFC</span>
+				</div>
+				<div class="col-1">
+				</div>
+				<div class="col-3">
+					<img height="37px" width="96px" src="assets/images/google.png" style="padding-top: 10px;"/>
+					<img height="37px" width="96px" src="assets/images/app.png" style="padding-top: 10px;"/>
+				</div>
+			</div>
+			<hr class="horizontal-line">
+			<div class="row">
+				<div class="col-6">
+					<img height="30px" width="40px" src="assets/images/facebook.png" style="padding-left: 10px;">
+					<img height="30px" width="60px" src="assets/images/instagram.png" style="padding-left: 30px;">
+					<img height="30px" width="75px" src="assets/images/youtube.png" style="padding-left: 30px;">
+				</div>
+				<div class="col-6">
+					<small style="float: right;">© Copyright 2021 KFC. All Rights Reserved.</small>
+				</div>
+			</div>
+			<br>
+			<div class="text-center">
+			<small>
+				Food shown are for illustration purpose only. Actual product may differ from the images shown in this website. Our menu prices are now inclusive of GST.* The KFC name, logos, and related marks are trademarks of KFC, Inc. All chicken products contain Monosodium Glutamate. Not recommended for infants below 12 months.
+			</small>
+			</div>
+		</div>
+		</footer>
+		<br>
+		
+		<script src="script.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+	
+</html>

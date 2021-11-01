@@ -1,0 +1,514 @@
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@font-face{
+	font-family: RenosRough-Regular;
+	src : url('assets/fonts/RenosRough-Regular.otf');
+}
+
+@font-face{
+	font-family: American Purpose;
+	src : url('assets/fonts/American Purpose.otf');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.sign-in{
+	font-family: RenosRough-Regular;
+	padding-top: 25px;
+}
+
+.nav-link{
+	color: #999999;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.nav-text{
+  position: absolute;
+  top: 50%;
+  padding-left: 10px;
+  transform: translateY(-50%);
+}
+
+i{
+	padding-left: 100px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .nav-text {
+    position: static;
+  }
+  i{
+	  padding-left: 10px;
+  }
+  img.sign-up{
+	  display: none;
+  }
+  h1.heading{
+	  font-size: 25px;
+	  font-weight: bold;
+	  padding-left: 30px;
+  }
+  div.products{
+	  padding-left: 30px;
+	  padding-right: 30px;
+  }
+  .c-text{
+    font-size: 10px;
+  }
+  .v-text{
+    font-size: 10px;
+  }
+  span.titlemenu{
+    display: none;
+  }
+  div.top-div{
+    display: none;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .nav-text {
+    position: static;
+  }
+  i{
+	  padding-left: 10px;
+  }
+  img.sign-up{
+	  display: none;
+  }
+  div.products{
+	  padding-left: 30px;
+	  padding-right: 30px;
+  }
+  .c-text{
+    font-size: 12px;
+  }
+}
+
+.sign-up{
+	padding-top: 10px;
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+.heading{
+	font-family: American Purpose;
+	font-size: 40px;
+	font-weight: bold;
+	padding-left: 175px;
+}
+
+.products{
+	padding-left: 175px;
+	padding-right: 175px;
+}
+
+.card {
+    box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
+    background-color: #F8F7F5!important;
+}
+
+.card-btn{
+	background-color: #E4002B;
+	color: white;
+	font-family: RenosRough-Regular;
+	float: right;
+}	
+
+.footer-links{
+	font-family: RenosRough-Regular;
+	font-size: 12px;
+	padding-left: 10px;
+}
+
+hr.horizontal-line{
+	border-top: 2px solid #BDBDBD; 
+}
+
+.titlemenu{
+  font-size: 14px;
+  margin-left: 50px;
+  font-weight: 800;
+  display: inline-block;
+}
+
+.top{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.welcome{
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background-color: #F8F7F5;
+}
+
+.c-text{
+  color: black;
+  text-align: center;
+}
+
+.v-text{
+  color: black;
+  text-align: center;
+  font-weight: 400!important;
+}
+
+.top-head{
+	font-family: American Purpose;
+	font-size: 20px;
+	font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.top-div{
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  background-color: #202124;
+  }
+
+  .start-btn{
+    background-color: #E4022B;
+    color: white;
+    padding-left: 30px!important;
+    padding-right: 30px!important;
+    margin-left: 40px;
+    border-radius: 30px/30px!important;
+  }
+
+.button {
+  border: 1px solid #E4022B;
+  border-radius: 3px;
+  width: 200px;
+  height: 20px;
+  display: block;
+
+  background: linear-gradient(to right, #E4022B 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+
+.button:hover {
+  background-position: left bottom;
+  text-decoration: none;
+}
+
+.text {
+  text-align: center;
+  font-size: 12px;
+  color: #E4022B;
+  transition: all .6s ease-out;
+  display: block;
+}
+
+.text:hover {
+  color: white;  
+}
+
+div.category-card:hover{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.kfctitle{
+	font-family: American Purpose;
+	font-size: 40px;
+	font-weight: bold;
+  margin-top: 30px;
+  margin-left: 15px;
+  width: 250px;
+}
+
+.searchbar{
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  content: "Search our menu";
+}
+
+div.wholesearchbar{
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 20px;
+  padding: 0px 15px;
+  margin-top: 50px;
+}
+
+hr.horiline{
+  height: 50px;
+}
+
+input:focus{
+  outline: none;
+}
+
+::-webkit-input-placeholder { 
+  font-weight: 600;
+  color: black;
+}
+
+.producttitle{
+	font-family: American Purpose;
+	font-size: 30px;
+	font-weight: bold;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.wholeproductpage{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.ptitle{
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+span.nonvegicon{
+  height: 3px;
+  width: 3px;
+  background-color: red;
+}
+
+.pcircle{
+  width: 10px;
+  height: 10px;
+  background: #E4022B;
+  border-radius: 50%;
+  float: left;
+  margin-top: 3px;
+}
+
+.pcircleveg{
+  width: 10px;
+  height: 10px;
+  background: #009607;
+  border-radius: 50%;
+  float: left;
+  margin-top: 3px;
+}
+
+.pcategory{
+  font-size: 11px;
+  float: left;
+  margin-left: 5px;
+}
+
+.pgreycircle{
+  width: 7px;
+  height: 7px;
+  background: #494949;
+  border-radius: 50%;
+  float: left;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.pprice{
+  margin-top: 7px;
+  font-weight: 600;
+}
+
+.pcontent{
+  font-size: 13px;
+}
+
+.cartbutton{
+  background-color: #E4022B;
+  color: white;
+  padding: 10px 45px;
+  border: none;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-bottom: 9vh;
+  border-radius: 50px;
+  font-size: 15px;
+}
+
+.cartbutton:hover{
+  background-color: rgba(228,2,43,0.9);
+  cursor: pointer;
+}
+
+div.stickyposition{
+  position: sticky;
+  top: 0;
+}
+
+::-webkit-scrollbar{
+  width: 0;
+}
+
+a.topbtn{
+  padding: 8px 15px 0px 15px;
+  color: black;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 25px;
+  box-shadow: 0 0 10px #888888;
+  font-stretch: expanded;
+}
+
+a.topbtn:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.bucketicon:hover{
+  cursor: pointer;
+}
+
+.apfont{
+	font-family: American Purpose;
+}
+/* 
+.modal-bi {
+  width: 1000px;
+  margin: auto;
+} */
+
+.bia{
+  color: black;
+  font-size: 15px;
+  font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight:350;
+  border: 1px solid grey;
+  border-radius: 20px;
+  display: inline-block;
+  width: 40%;
+  padding: 10px 60px;
+  margin: 15px 0;
+}
+
+.bia:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.siu{
+  margin-top: 80px;
+  color: #494949;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.passbar{
+  border: none;
+  float: left;
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+div.wholepassbar{
+  width: 30%;
+  display: inline-block;
+  border-bottom: 1px solid grey;
+  padding: 0px 15px;
+  margin-top: 50px;
+}
+
+.scondition{
+  font-size: 11px;
+  margin-top: 30px;
+}
+
+.scondition a{
+  color: black;
+  text-decoration: underline;
+}
+
+.scondition a:hover{
+  color: black;
+}
+
+.pcode{
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 10px 10px;
+}
+
+div.wholecode{
+  background-color: #202124;
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 30px;
+  padding: 5px 25px;
+  margin-top: 50px;
+  color: white;
+}
+
+.or {
+  margin-top:50px;
+  margin-left:auto;
+  margin-right:auto;
+  display:flex;
+  width: 30%;
+}
+.or:before, .or:after {
+  color:white;
+  content:'';
+  flex:1;
+  border-bottom: groove 0.5px;
+  margin: auto 1.5em;
+  box-shadow: 0 -1px ;
+}
+
+.signina{
+  color: black;
+}
+
+.signina:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.pcontent{
+  height: 7vh!important;
+}
+
+.pguest{
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 10px 10px;
+}
+
+div.wholeguest{
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 30px;
+  padding: 5px 90px;
+  margin-top: 30px;
+  color: black;
+}
